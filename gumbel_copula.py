@@ -1,3 +1,6 @@
+import numpy as np
+from scipy.stats import levy_stable, norm
+
 def gumbel_copula(θ, n_claims=1000, rng=None):
     if θ < 1:
         raise ValueError("Gumbel θ must be ≥ 1")
