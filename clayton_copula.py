@@ -1,3 +1,6 @@
+import numpy as np
+from scipy.stats import norm
+
 def clayton_copula(θ, n_claims=1000, rng=None):
     # >0  ⇒ lower-tail positive dependence
     rng = np.random.default_rng(rng)
